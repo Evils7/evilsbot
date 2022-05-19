@@ -22,7 +22,7 @@ class EvilsBot(commands.Bot):
         self.loop.create_task(self.startup())
 
     def run(self, *args, **kwargs):
-        super().run(token['token'])
+        super().run(token)
 
     async def startup(self):
         await self.wait_until_ready()
